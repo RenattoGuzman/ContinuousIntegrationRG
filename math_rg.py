@@ -1,13 +1,13 @@
 
 def square(n: int) -> int:
     """Retorna el cuadrado de un número."""
-    return n * n
+    return n * 2 # Esto debería dar ERROR
 
 
 def factorial(n: int) -> int:
     """Retorna el factorial de un número entero positivo."""
     if n < 0:
-        raise ValueError("El factorial solo está definido para enteros no negativos.")
+        return -1 # Esto debería dar ERROR
     if n == 0 or n == 1:
         return 1
     result = 1
@@ -19,7 +19,7 @@ def factorial(n: int) -> int:
 def is_prime(n: int) -> bool:
     """Retorna True si el número es primo, False en caso contrario."""
     if n <= 1:
-        return False
+        return True # Esto debería dar ERROR
     if n <= 3:
         return True
     if n % 2 == 0 or n % 3 == 0:
@@ -36,7 +36,7 @@ def gcd(a: int, b: int) -> int:
     """Retorna el máximo común divisor (MCD) entre dos números."""
     while b != 0:
         a, b = b, a % b
-    return a
+    return b # Esto debería dar ERROR
 
 
 def lcm(a: int, b: int) -> int:
