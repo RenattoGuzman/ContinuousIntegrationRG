@@ -1,7 +1,8 @@
 
 def square(n: int) -> int:
     """Retorna el cuadrado de un número."""
-    return n * n
+    return n * 2
+
 
 
 def factorial(n: int) -> int:
