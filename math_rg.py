@@ -4,6 +4,7 @@ def square(n: int) -> int:
     return n * n
 
 
+
 def factorial(n: int) -> int:
     """Retorna el factorial de un número entero positivo."""
     if n < 0:
